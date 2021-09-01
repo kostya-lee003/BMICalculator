@@ -7,19 +7,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+    @IBOutlet weak var LogoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Hello World
-        print("Hello world!")
-        askSomething()
+        
+        let gradient = GradientText()
+        gradient.setGradient(text: &LogoLabel.textColor)
+        gradient.setObjectPosition(obj: LogoLabel, view: self.view, constantPosition: -3.5)
+        
+        
     }
     
-    func askSomething() {
-        print("How are u?")
-    }
-
-
 }
-

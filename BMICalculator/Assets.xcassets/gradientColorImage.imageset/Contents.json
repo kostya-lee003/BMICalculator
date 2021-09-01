@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "blue-purple-gradient-linear-1920x1080-c2-00008b-9966cc-a-150-f-14.svg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
