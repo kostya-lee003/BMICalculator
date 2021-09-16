@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8183CDA26ECEF5800C63BCC /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8183CD926ECEF5800C63BCC /* Button.swift */; };
 		C84078B826DF661C0023C454 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84078B026DF661C0023C454 /* Quicksand-Bold.ttf */; };
 		C84078B926DF661C0023C454 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84078B126DF661C0023C454 /* Quicksand-Medium.ttf */; };
 		C84078BA26DF661C0023C454 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84078B226DF661C0023C454 /* Quicksand-Regular.ttf */; };
@@ -15,6 +16,7 @@
 		C84078BD26DF661C0023C454 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = C84078B526DF661C0023C454 /* OFL.txt */; };
 		C84078BE26DF661C0023C454 /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84078B626DF661C0023C454 /* Quicksand-VariableFont_wght.ttf */; };
 		C84078BF26DF661C0023C454 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = C84078B726DF661C0023C454 /* README.txt */; };
+		C84C0ED526F328C5001EE807 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C0ED426F328C5001EE807 /* Slider.swift */; };
 		C853A03826DE340F00BBF32E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853A03726DE340F00BBF32E /* AppDelegate.swift */; };
 		C853A03A26DE340F00BBF32E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853A03926DE340F00BBF32E /* SceneDelegate.swift */; };
 		C853A03C26DE340F00BBF32E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853A03B26DE340F00BBF32E /* ViewController.swift */; };
@@ -25,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8183CD926ECEF5800C63BCC /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C84078B026DF661C0023C454 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		C84078B126DF661C0023C454 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		C84078B226DF661C0023C454 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		C84078B526DF661C0023C454 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		C84078B626DF661C0023C454 /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		C84078B726DF661C0023C454 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		C84C0ED426F328C5001EE807 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		C853A03426DE340F00BBF32E /* BMICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C853A03726DE340F00BBF32E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C853A03926DE340F00BBF32E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,9 +111,11 @@
 			children = (
 				C853A03726DE340F00BBF32E /* AppDelegate.swift */,
 				C853A03926DE340F00BBF32E /* SceneDelegate.swift */,
+				C84C0ED426F328C5001EE807 /* Slider.swift */,
 				C853A03B26DE340F00BBF32E /* ViewController.swift */,
 				C853A03D26DE340F00BBF32E /* Main.storyboard */,
 				C8FD934126DFB1230077957F /* GradientText.swift */,
+				C8183CD926ECEF5800C63BCC /* Button.swift */,
 				C853A04026DE340F00BBF32E /* Assets.xcassets */,
 				C84078AD26DF65E90023C454 /* fonts */,
 				C853A04226DE340F00BBF32E /* LaunchScreen.storyboard */,
@@ -197,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8FD934226DFB1230077957F /* GradientText.swift in Sources */,
+				C8183CDA26ECEF5800C63BCC /* Button.swift in Sources */,
 				C853A03C26DE340F00BBF32E /* ViewController.swift in Sources */,
 				C853A03826DE340F00BBF32E /* AppDelegate.swift in Sources */,
+				C84C0ED526F328C5001EE807 /* Slider.swift in Sources */,
 				C853A03A26DE340F00BBF32E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

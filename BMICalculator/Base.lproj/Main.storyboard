@@ -8,7 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Quicksand-Bold.ttf">
+        <array key="Quicksand-SemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+        <array key="Quicksand-VariableFont_wght.ttf">
             <string>Quicksand-Bold</string>
         </array>
     </customFonts>
@@ -27,6 +30,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrj-vM-ZcP">
+                                <rect key="frame" x="137" y="714" width="151" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="47"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dSq-Dl-t4S">
+                                <rect key="frame" x="148" y="399" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -35,6 +48,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BMISlider" destination="dSq-Dl-t4S" id="Gzr-Jz-QOf"/>
+                        <outlet property="CalculateButton" destination="mrj-vM-ZcP" id="JqM-yv-kpg"/>
                         <outlet property="LogoLabel" destination="1io-Ga-tdx" id="exQ-pr-uQX"/>
                     </connections>
                 </viewController>

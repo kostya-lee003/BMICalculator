@@ -10,14 +10,19 @@ import UIKit
 
 class GradientText {
     
-    func setGradient(text: inout UIColor) {
+    func setGradient(color: inout UIColor) {
         let gradient: UIImage = UIImage(named: "gradientColorImage")!
-        text = UIColor(patternImage: gradient)
+        color = UIColor(patternImage: gradient)
     }
     
     func setObjectPosition(obj: AnyObject, view: UIView, constantPosition: Float) {
         obj.centerYAnchor.constraint(equalTo: view.centerYAnchor,
-                                     constant: view.frame.height / CGFloat(constantPosition)).isActive = true    // 2.8
+                                     constant: view.frame.height / CGFloat(constantPosition)).isActive = true
         obj.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
+    
+    func setLabelSize(view: UIView, label: UILabel) {
+        label.font = label.font.withSize(view.frame.width / 8.5)
+    }
+    
 }
