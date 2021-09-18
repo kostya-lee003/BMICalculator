@@ -17,8 +17,8 @@ class GradientText {
     
     func setObjectPosition(obj: AnyObject, view: UIView, constantPosition: Float) {
         obj.centerYAnchor.constraint(equalTo: view.centerYAnchor,
-                                     constant: view.frame.height / CGFloat(constantPosition)).isActive = true
-        obj.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+                                     constant: view.frame.height / CGFloat(constantPosition) ).isActive = true
+        obj.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -10).isActive = true
     }
     
     func setLabelSize(view: UIView, label: UILabel) {

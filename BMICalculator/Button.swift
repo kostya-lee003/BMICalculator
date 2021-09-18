@@ -21,7 +21,7 @@ class Button: UIButton {
         button.layer.borderWidth = CGFloat(1.7)
         button.layer.borderColor = UIColor(red: 0.4, green: 0.5, blue: 0.1, alpha: 0.5).cgColor
         button.layer.cornerRadius = CGFloat(10)
-        button.titleLabel!.font = UIFont(name: "Quicksand-Bold", size: view.frame.width * 0.09)
+        button.titleLabel!.font = UIFont(name: "Quicksand-SemiBold", size: view.frame.width * 0.09)
         
     }
     

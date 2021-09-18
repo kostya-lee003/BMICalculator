@@ -23,6 +23,7 @@
 		C853A03F26DE340F00BBF32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C853A03D26DE340F00BBF32E /* Main.storyboard */; };
 		C853A04126DE340F00BBF32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C853A04026DE340F00BBF32E /* Assets.xcassets */; };
 		C853A04426DE340F00BBF32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C853A04226DE340F00BBF32E /* LaunchScreen.storyboard */; };
+		C8FC02D026F33CB600FC20E2 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FC02CF26F33CB600FC20E2 /* Logo.swift */; };
 		C8FD934226DFB1230077957F /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FD934126DFB1230077957F /* GradientText.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		C853A04026DE340F00BBF32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C853A04326DE340F00BBF32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C853A04526DE340F00BBF32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8FC02CF26F33CB600FC20E2 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		C8FD934126DFB1230077957F /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				C84C0ED426F328C5001EE807 /* Slider.swift */,
 				C853A03B26DE340F00BBF32E /* ViewController.swift */,
 				C853A03D26DE340F00BBF32E /* Main.storyboard */,
+				C8FC02CF26F33CB600FC20E2 /* Logo.swift */,
 				C8FD934126DFB1230077957F /* GradientText.swift */,
 				C8183CD926ECEF5800C63BCC /* Button.swift */,
 				C853A04026DE340F00BBF32E /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8FD934226DFB1230077957F /* GradientText.swift in Sources */,
+				C8FC02D026F33CB600FC20E2 /* Logo.swift in Sources */,
 				C8183CDA26ECEF5800C63BCC /* Button.swift in Sources */,
 				C853A03C26DE340F00BBF32E /* ViewController.swift in Sources */,
 				C853A03826DE340F00BBF32E /* AppDelegate.swift in Sources */,
