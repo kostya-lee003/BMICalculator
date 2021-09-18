@@ -10,19 +10,20 @@ import UIKit
 
 class Logo {
     
-    func setPosition(relativeToObj: UILabel, logo: UIImageView, view: UIView) {
-
+    private func setPosition(relativeToObj: UILabel, logo: UIImageView, view: UIView) {
+        logo.leadingAnchor.constraint(equalTo: relativeToObj.leadingAnchor, constant: view.frame.width * 0.78).isActive = true
+        logo.topAnchor.constraint(equalTo: relativeToObj.topAnchor, constant: view.frame.width * -0.05).isActive = true
     }
     
-//    func setSize(logo: UIImageView, view: UIView) {
-//        let neededHeight = UIScreen.main.bounds.height * 0.2
-//        logo.frame.size.height = neededHeight
-        
-//        let size = view.frame.width * 0.05
-//        logo.frame = CGRect(x: 0, y: 0, width: size, height: size)
-        
-//    }
-    init(logo: UIImageView) {
+    private func setSize(logo: UIImageView, view: UIView) {
+        logo.widthAnchor.constraint(equalToConstant: view.frame.width / 7.8).isActive = true
+        logo.heightAnchor.constraint(equalToConstant: view.frame.width / 7.8).isActive = true
+    }
+    
+    init(logo: UIImageView, relativeTo: UILabel, view: UIView) {
         logo.translatesAutoresizingMaskIntoConstraints = false
+        
+        setSize(logo: logo, view: view)
+        setPosition(relativeToObj: relativeTo, logo: logo, view: view)
     }
 }

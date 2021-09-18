@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         setButton()
         setSlider()
         
-        let screenSize: CGRect = UIScreen.main.bounds
-        Logo.frame = CGRect(x: 0, y: 0, width: 50, height: screenSize.height * 0.2)
     }
     
     func setLogoLabel() {
@@ -37,23 +35,17 @@ class ViewController: UIViewController {
     }
 
     func setButton() {
-        let b = Button()
-        self.view.addSubview(b)
-        b.setButtonProperties(button: CalculateButton, view: view)
-        b.setBtnPosition(view: view, button: CalculateButton)
-        b.setBtnSize(view: view, button: CalculateButton)
+        Button(view: self.view, button: CalculateButton)
     }
     
     func setSlider() {
-        let s = Slider()
-        s.setSliderConstraints(slider: BMISlider, view: self.view)
+        Slider().setSliderConstraints(slider: BMISlider, view: self.view)
     }
     
     func setLogo() {
         
-        let l = BMICalculator.Logo(logo: Logo)
-        l.setPosition(relativeToObj: LogoLabel, logo: Logo, view: self.view)
-        l.setSize(logo: Logo, view: self.view)
+        BMICalculator.Logo(logo: Logo, relativeTo: LogoLabel, view: self.view)
+       
         
     }
 }

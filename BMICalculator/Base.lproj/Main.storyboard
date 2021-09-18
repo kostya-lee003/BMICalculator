@@ -11,7 +11,7 @@
         <array key="Quicksand-Bold.ttf">
             <string>Quicksand-Bold</string>
         </array>
-        <array key="Quicksand-SemiBold.ttf">
+        <array key="Quicksand-VariableFont_wght.ttf">
             <string>Quicksand-SemiBold</string>
         </array>
     </customFonts>
@@ -41,9 +41,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </slider>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="m0G-eB-DOD">
-                                <rect key="frame" x="353" y="198" width="54" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-AG-yWB">
+                                <rect key="frame" x="333" y="192" width="61" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -55,7 +55,7 @@
                     <connections>
                         <outlet property="BMISlider" destination="dSq-Dl-t4S" id="Gzr-Jz-QOf"/>
                         <outlet property="CalculateButton" destination="mrj-vM-ZcP" id="JqM-yv-kpg"/>
-                        <outlet property="Logo" destination="m0G-eB-DOD" id="Wpm-ch-vdk"/>
+                        <outlet property="Logo" destination="cGv-AG-yWB" id="wdU-4E-Q3S"/>
                         <outlet property="LogoLabel" destination="1io-Ga-tdx" id="exQ-pr-uQX"/>
                     </connections>
                 </viewController>

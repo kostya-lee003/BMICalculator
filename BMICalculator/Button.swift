@@ -12,7 +12,7 @@ import UIKit
 
 class Button: UIButton {
     
-    func setButtonProperties(button: UIButton, view: UIView) {
+    private func setButtonProperties(button: UIButton, view: UIView) {
         
         button.setTitle("Calculate!", for: .normal)
         button.setTitleColor(UIColor(red: 0.5, green: 0.1, blue: 0.4, alpha: 1), for: .normal)
@@ -25,15 +25,26 @@ class Button: UIButton {
         
     }
     
-    func setBtnSize(view: UIView, button: UIButton) {
+    private func setBtnSize(view: UIView, button: UIButton) {
         button.widthAnchor.constraint(equalToConstant: view.frame.width / 1.36).isActive = true
         button.heightAnchor.constraint(equalToConstant: view.frame.height / 11.5).isActive = true
     }
     
-    func setBtnPosition(view: UIView, button: UIButton) {
+    private func setBtnPosition(view: UIView, button: UIButton) {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: view.frame.height / 3.7).isActive = true
+    }
+    
+    init(view: UIView, button: UIButton) {
+        super.init(frame: .zero)
+        setButtonProperties(button: button, view: view)
+        setBtnSize(view: view, button: button)
+        setBtnPosition(view: view, button: button)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }
