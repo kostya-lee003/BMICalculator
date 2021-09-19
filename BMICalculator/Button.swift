@@ -33,7 +33,7 @@ class Button: UIButton {
     private func setBtnPosition(view: UIView, button: UIButton) {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: view.frame.height / 3.7).isActive = true
+        button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: view.frame.height / 3.5).isActive = true
     }
     
     init(view: UIView, button: UIButton) {
