@@ -28,11 +28,19 @@ class ViewController: UIViewController {
         setButton()
         setSlider()
         
-        setLabel(label: WeightLabel, position: -0.05)
-        setLabel(label: HeightLabel, position: 0.11)
+        setLabel(label: WeightLabel, position: 0.11)
+        setLabel(label: HeightLabel, position: -0.05)
         
-        setLabelNumber(label: Weight, position: -0.05)
-        setLabelNumber(label: Height, position: 0.11)
+        setLabelNumber(label: Weight, position: 0.11)
+        setLabelNumber(label: Height, position: -0.05)
+    }
+    
+    @IBAction func ChangeHeight(_ sender: UISlider) {
+        Height.text = "\(sender.value * 163 + 50) cm"
+    }
+    
+    @IBAction func ChangeWeight(_ sender: UISlider) {
+        Weight.text = "\(sender.value * 150 + 10) kg"
     }
     
     func setLogoLabel() {
@@ -41,11 +49,13 @@ class ViewController: UIViewController {
         gradient.setObjectPosition(obj: LogoLabel, view: self.view, constantPosition: -3.5)
         gradient.setLabelSize(view: self.view, label: LogoLabel)
     }
-    
-    @objc func buttonTapped(_ sender: UIButton!) {
-        
-    }
 
+    @IBAction func ButtonTapped(_ sender: UIButton) {
+        let result = ResultVC()
+        self.present(result, animated: true, completion: nil)
+        print("Entering to ResultVC")
+    }
+    
     func setButton() {
         Button(view: self.view, button: CalculateButton)
     }
