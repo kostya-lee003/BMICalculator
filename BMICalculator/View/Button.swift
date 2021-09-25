@@ -12,17 +12,14 @@ import UIKit
 
 class Button: UIButton {
     
-    private func setButtonProperties(button: UIButton, view: UIView) {
+    func setButtonProperties(button: UIButton, view: UIView) {
         
-        button.setTitle("Calculate!", for: .normal)
         button.setTitleColor(UIColor(red: 0.5, green: 0.1, blue: 0.4, alpha: 1), for: .normal)
         button.backgroundColor = UIColor(ciColor: .white)
-       
         button.layer.borderWidth = CGFloat(1.7)
         button.layer.borderColor = UIColor(red: 0.4, green: 0.5, blue: 0.1, alpha: 0.5).cgColor
         button.layer.cornerRadius = CGFloat(10)
         button.titleLabel!.font = UIFont(name: "Quicksand-SemiBold", size: view.frame.width * 0.09)
-        
     }
     
     private func setBtnSize(view: UIView, button: UIButton) {
@@ -31,14 +28,13 @@ class Button: UIButton {
     }
     
     private func setBtnPosition(view: UIView, button: UIButton) {
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: view.frame.height / 3.5).isActive = true
     }
     
-    init(view: UIView, button: UIButton) {
+    init(view: UIView, button: UIButton!) {
         super.init(frame: .zero)
-        setButtonProperties(button: button, view: view)
+        button.translatesAutoresizingMaskIntoConstraints = false
         setBtnSize(view: view, button: button)
         setBtnPosition(view: view, button: button)
     }

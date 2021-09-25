@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateVC: UIViewController {
     
     @IBOutlet weak var LogoLabel: UILabel!
     @IBOutlet weak var Logo: UIImageView!
@@ -31,33 +31,51 @@ class ViewController: UIViewController {
         setLabel(label: WeightLabel, position: 0.11)
         setLabel(label: HeightLabel, position: -0.05)
         
+        Height.text = String(format: "%.1f cm", HeightSlider.value * 163 + 50)
+        Weight.text = String(format: "%.1f kg", WeightSlider.value * 150 + 10)
         setLabelNumber(label: Weight, position: 0.11)
         setLabelNumber(label: Height, position: -0.05)
     }
     
     @IBAction func ChangeHeight(_ sender: UISlider) {
-        Height.text = "\(sender.value * 163 + 50) cm"
+        Height.text = String(format: "%.1f cm", sender.value * 163 + 50)
     }
     
     @IBAction func ChangeWeight(_ sender: UISlider) {
-        Weight.text = "\(sender.value * 150 + 10) kg"
+        Weight.text = String(format: "%.1f kg", sender.value * 150 + 10)
     }
-    
+
+    @IBAction func ButtonTapped(_ sender: UIButton) {
+        //self.prepare(for: "", sender: )
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let weight = WeightSlider.value * 150 + 10
+            let height = (HeightSlider.value * 163 + 50) / 100
+            
+            let bmi = weight / (height * height)
+            
+            let destinationVC = segue.destination as! ResultVC
+            destinationVC.bmiValue = String(format: "%.1f", bmi)
+            
+            }
+     }
+}
+
+
+extension CalculateVC {
     func setLogoLabel() {
         let gradient = GradientText()
         gradient.setGradient(color: &LogoLabel.textColor)
         gradient.setObjectPosition(obj: LogoLabel, view: self.view, constantPosition: -3.5)
         gradient.setLabelSize(view: self.view, label: LogoLabel)
     }
-
-    @IBAction func ButtonTapped(_ sender: UIButton) {
-        let result = ResultVC()
-        self.present(result, animated: true, completion: nil)
-        print("Entering to ResultVC")
-    }
     
     func setButton() {
-        Button(view: self.view, button: CalculateButton)
+        Button(view: self.view, button: CalculateButton).setButtonProperties(button: CalculateButton, view: self.view)
     }
     
     func setSlider() {
