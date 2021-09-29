@@ -11,10 +11,8 @@
         <array key="Quicksand-Bold.ttf">
             <string>Quicksand-Bold</string>
         </array>
-        <array key="Quicksand-Medium.ttf">
+        <array key="Quicksand-VariableFont_wght.ttf">
             <string>Quicksand-Medium</string>
-        </array>
-        <array key="Quicksand-SemiBold.ttf">
             <string>Quicksand-SemiBold</string>
         </array>
     </customFonts>
@@ -111,7 +109,7 @@
                         <outlet property="Weight" destination="jHj-Fu-qbA" id="bvW-53-Jvv"/>
                         <outlet property="WeightLabel" destination="k6M-DG-bcd" id="8CO-C8-GWi"/>
                         <outlet property="WeightSlider" destination="bvV-hp-blQ" id="yfu-bw-8XE"/>
-                        <segue destination="c0V-fZ-sPy" kind="presentation" identifier="goToResult" modalPresentationStyle="fullScreen" id="78D-6K-Igp"/>
+                        <segue destination="c0V-fZ-sPy" kind="presentation" identifier="goToResult" id="78D-6K-Igp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -123,7 +121,7 @@
             <objects>
                 <viewController id="c0V-fZ-sPy" customClass="ResultVC" customModule="BMICalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LxD-9o-ra3" customClass="ResultCV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRL-PM-hMc">

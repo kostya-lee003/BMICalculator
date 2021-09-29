@@ -46,9 +46,7 @@ class CalculateVC: UIViewController {
     }
 
     @IBAction func ButtonTapped(_ sender: UIButton) {
-        //self.prepare(for: "", sender: )
         self.performSegue(withIdentifier: "goToResult", sender: self)
-
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,14 +59,14 @@ class CalculateVC: UIViewController {
             let destinationVC = segue.destination as! ResultVC
             destinationVC.bmiValue = String(format: "%.1f", bmi)
             
-            }
+        }
      }
 }
 
 
 extension CalculateVC {
     func setLogoLabel() {
-        let gradient = GradientText()
+        let gradient = GradientLabel()
         gradient.setGradient(color: &LogoLabel.textColor)
         gradient.setObjectPosition(obj: LogoLabel, view: self.view, constantPosition: -3.5)
         gradient.setLabelSize(view: self.view, label: LogoLabel)
@@ -79,12 +77,12 @@ extension CalculateVC {
     }
     
     func setSlider() {
-        Slider(slider: WeightSlider, view: self.view, constant: self.view.frame.height * 0.08)
-        Slider(slider: HeightSlider, view: self.view, constant: self.view.frame.height * -0.08)
+        _ = Slider(slider: WeightSlider, view: self.view, constant: self.view.frame.height * 0.08)
+        _ = Slider(slider: HeightSlider, view: self.view, constant: self.view.frame.height * -0.08)
     }
     
     func setLogo() {
-        BMICalculator.Logo(logo: Logo, relativeTo: LogoLabel, view: self.view)
+        _ = BMICalculator.Logo(logo: Logo, relativeTo: LogoLabel, view: self.view)
     }
     
     func setLabel(label: UILabel, position: CGFloat) {

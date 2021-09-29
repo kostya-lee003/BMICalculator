@@ -8,7 +8,7 @@
 import UIKit
 
 
-class GradientText {
+class GradientLabel {
     
     func setGradient(color: inout UIColor) {
         let gradient: UIImage = UIImage(named: "gradientColorImage")!

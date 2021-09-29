@@ -25,9 +25,10 @@
 		C853A03F26DE340F00BBF32E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C853A03D26DE340F00BBF32E /* Main.storyboard */; };
 		C853A04126DE340F00BBF32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C853A04026DE340F00BBF32E /* Assets.xcassets */; };
 		C853A04426DE340F00BBF32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C853A04226DE340F00BBF32E /* LaunchScreen.storyboard */; };
+		C88940242701CFA6008EDAE9 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88940232701CFA6008EDAE9 /* CircularProgressBar.swift */; };
 		C8F3E21D26FAE00900C35A64 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F3E21C26FAE00900C35A64 /* ResultVC.swift */; };
 		C8FC02D026F33CB600FC20E2 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FC02CF26F33CB600FC20E2 /* Logo.swift */; };
-		C8FD934226DFB1230077957F /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FD934126DFB1230077957F /* GradientText.swift */; };
+		C8FD934226DFB1230077957F /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FD934126DFB1230077957F /* GradientLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +52,10 @@
 		C853A04026DE340F00BBF32E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C853A04326DE340F00BBF32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C853A04526DE340F00BBF32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88940232701CFA6008EDAE9 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		C8F3E21C26FAE00900C35A64 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultVC.swift; path = BMICalculator/Controller/ResultVC.swift; sourceTree = SOURCE_ROOT; };
 		C8FC02CF26F33CB600FC20E2 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
-		C8FD934126DFB1230077957F /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
+		C8FD934126DFB1230077957F /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +157,8 @@
 				C8183CD926ECEF5800C63BCC /* Button.swift */,
 				C84C0ED426F328C5001EE807 /* Slider.swift */,
 				C8FC02CF26F33CB600FC20E2 /* Logo.swift */,
-				C8FD934126DFB1230077957F /* GradientText.swift */,
+				C8FD934126DFB1230077957F /* GradientLabel.swift */,
+				C88940232701CFA6008EDAE9 /* CircularProgressBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,11 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8FD934226DFB1230077957F /* GradientText.swift in Sources */,
+				C8FD934226DFB1230077957F /* GradientLabel.swift in Sources */,
 				C8F3E21D26FAE00900C35A64 /* ResultVC.swift in Sources */,
 				C8FC02D026F33CB600FC20E2 /* Logo.swift in Sources */,
 				C8183CDA26ECEF5800C63BCC /* Button.swift in Sources */,
 				C82ED2A826FF2515005CF2F4 /* CountingLabel.swift in Sources */,
+				C88940242701CFA6008EDAE9 /* CircularProgressBar.swift in Sources */,
 				C82ED2AA26FF4EC5005CF2F4 /* Extensions.swift in Sources */,
 				C853A03C26DE340F00BBF32E /* CalculateVC.swift in Sources */,
 				C853A03826DE340F00BBF32E /* AppDelegate.swift in Sources */,

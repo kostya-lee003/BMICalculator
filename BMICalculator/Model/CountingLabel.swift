@@ -12,7 +12,6 @@ class CountingLabel: UILabel {
     var counterVelocity: Float = 3.0
     
     enum CounterAnimationType {
-        case Linear
         case EaseIn
         case EaseOut
     }
