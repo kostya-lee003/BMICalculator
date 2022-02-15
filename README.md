@@ -1,5 +1,5 @@
 # BMICalculator
-Angela Yu's course. BMI calculator counts user's BMI
+Angela Yu's course. BMI calculator counts user's BMI.
 Design made by me ;)
 
 
