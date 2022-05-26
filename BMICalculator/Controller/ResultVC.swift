@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 
+// View controller appearing after "calculate" button was pressed
 
 class ResultVC: UIViewController {
     @IBOutlet weak var BMILabel: CountingLabel!
