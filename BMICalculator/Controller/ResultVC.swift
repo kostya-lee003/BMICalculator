@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 
 // View controller appearing after "calculate" button was pressed
+// Finally set email and can push via kostya-lee003
 
 class ResultVC: UIViewController {
     @IBOutlet weak var BMILabel: CountingLabel!
