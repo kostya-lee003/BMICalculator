@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import UIKit
 
-
+// Cool button)
 class Button: UIButton {
     
     func setButtonProperties(button: UIButton, view: UIView) {
