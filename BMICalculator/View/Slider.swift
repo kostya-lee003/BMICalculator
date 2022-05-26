@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 
-// Slider
-
 class Slider {
     init(slider: UISlider, view: UIView, constant: CGFloat) {
         slider.translatesAutoresizingMaskIntoConstraints = false
