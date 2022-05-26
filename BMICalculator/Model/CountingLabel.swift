@@ -7,6 +7,8 @@
 
 import UIKit
 
+// Counting label class )
+
 class CountingLabel: UILabel {
     
     var counterVelocity: Float = 3.0
